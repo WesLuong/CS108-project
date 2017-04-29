@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 442}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -67,10 +67,10 @@ MonoBehaviour:
     y: 0
     width: 414
     height: 947
-  m_MinSize: {x: 277, y: 271}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 277, y: 292}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 105
+  controlID: 97
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -113,8 +113,8 @@ MonoBehaviour:
     y: 371
     width: 414
     height: 576
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -194,7 +194,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 442}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &9
 MonoBehaviour:
@@ -348,18 +348,18 @@ MonoBehaviour:
       y: 17
       width: 1504
       height: 535
-    m_Scale: {x: 1.092727, y: 1.092727}
-    m_Translation: {x: 709.16016, y: 253.5446}
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 752, y: 267.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -648.98206
-      y: -232.02924
-      width: 1376.3732
-      height: 489.6008
+      x: -752
+      y: -267.5
+      width: 1504
+      height: 535
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
@@ -400,9 +400,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.4764022, y: 0.73427963, z: 0.6136991}
+    m_Target: {x: -5.830309, y: -0.3595276, z: 2.796943}
     speed: 2
-    m_Value: {x: -0.4764022, y: 0.73427963, z: 0.6136991}
+    m_Value: {x: -5.830309, y: -0.3595276, z: 2.796943}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -425,13 +425,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.6844486, y: -0.0076545617, z: 0.0071870694, w: -0.7289856}
+    m_Target: {x: -0.6253219, y: -0.023401916, z: 0.018765856, w: -0.77979016}
     speed: 2
-    m_Value: {x: -0.6844486, y: -0.0076545617, z: 0.0071870694, w: -0.7289856}
+    m_Value: {x: -0.6253219, y: -0.023401916, z: 0.018765856, w: -0.77979016}
   m_Size:
-    m_Target: 9.357992
+    m_Target: 11.243927
     speed: 2
-    m_Value: 9.357992
+    m_Value: 11.243927
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -479,19 +479,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Materials
+    - Assets/Prefabs/VFX/Engines
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Prefabs/VFX/Engines
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Wes\Documents\Unity Projects\Near A Tomata
+  m_LastProjectPath: C:\Users\Wes\Documents\GitHub\CS108-project\Near A Tomata
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: dc270000
-    m_LastClickedID: 10204
-    m_ExpandedIDs: 482500009a2500006c27000000ca9a3bffffff7f
+    m_SelectedIDs: ca2a0000
+    m_LastClickedID: 10954
+    m_ExpandedIDs: 00000000b22400000c25000092250000d02a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -519,7 +519,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000b22400000c25000092250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
-    m_CachedPref: 100
+    m_CachedPref: 127
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -635,20 +635,20 @@ MonoBehaviour:
     height: 350
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 3ec8ffff8af2ffff34fbffff00000000
+    m_SelectedIDs: ecf9ffff
+    m_LastClickedID: -1556
+    m_ExpandedIDs: fcfcfeff2c3dffff0a60ffffe2fbffff000000004a250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: SpherePlayer
-      m_OriginalName: SpherePlayer
+      m_Name: Bolt
+      m_OriginalName: Bolt
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -3446
+      m_UserData: -49876
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
