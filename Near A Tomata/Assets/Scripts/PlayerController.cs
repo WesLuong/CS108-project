@@ -21,28 +21,41 @@ public class PlayerController : MonoBehaviour {
 
     private float nextFire;
 
+
+    public KeyCode upArrow;
+    public KeyCode downArrow;
+    public KeyCode leftArrow;
+    public KeyCode rightArrow;
+
+
+
     void Update()
     {
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+            GetComponent<AudioSource>().Play();
         }
+
+        if (Input.GetKeyDown(upArrow))
+            GetComponent<Transform>().eulerAngles = new Vector3(5f, 0, 0);
+
+        if (Input.GetKeyDown(downArrow))
+            GetComponent<Transform>().eulerAngles = new Vector3(-5f, 0, 0);
+
+        if (Input.GetKeyDown(leftArrow))
+            GetComponent<Transform>().eulerAngles = new Vector3(0, 5f, 0);
+
+        if (Input.GetKeyDown(rightArrow))
+            GetComponent<Transform>().eulerAngles = new Vector3(0, -5f, 0);
+
     }
 
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-
-        if (Input.GetKey("space"))
-        {
-            transform.Rotate(0, Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0);
-        }
-        if (Input.GetKey("left"))
-        {
-            transform.Rotate(0, Input.GetAxis("Horizontal") * speed * Time.deltaTime, 0);
-        }
 
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
