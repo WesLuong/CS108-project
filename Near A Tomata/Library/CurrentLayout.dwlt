@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 442}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -40,8 +40,8 @@ MonoBehaviour:
     y: 0
     width: 414
     height: 371
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -67,10 +67,10 @@ MonoBehaviour:
     y: 0
     width: 414
     height: 947
-  m_MinSize: {x: 277, y: 292}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 277, y: 271}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 112
+  controlID: 91
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -115,12 +115,12 @@ MonoBehaviour:
     height: 576
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 2
+  m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
@@ -195,7 +195,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 442}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &9
 MonoBehaviour:
@@ -318,7 +318,7 @@ MonoBehaviour:
     y: 463
     width: 412
     height: 555
-  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/collab
+  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
   m_GlobalObjectTypeName: 
   m_RegisteredViewURLs:
   - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.71554756, y: 0.0010467501, z: -0.0010725367, w: -0.6985623}
     speed: 2
-    m_Value: {x: -0.7155476, y: 0.0010467502, z: -0.0010725368, w: -0.6985624}
+    m_Value: {x: -0.7155476, y: 0.0010467502, z: -0.0010725367, w: -0.6985623}
   m_Size:
     m_Target: 27.496778
     speed: 2
@@ -525,7 +525,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 33}
     m_SelectedIDs: 4e250000
     m_LastClickedID: 9550
-    m_ExpandedIDs: 00000000be2400004c2500004e250000ca26000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000be2400004c2500004e250000f626000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -553,7 +553,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be2400004c2500004e250000ca260000
+    m_ExpandedIDs: 00000000be2400004c2500004e250000f6260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -669,23 +669,23 @@ MonoBehaviour:
     height: 350
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46280000
-    m_LastClickedID: 10310
-    m_ExpandedIDs: faf8ffffe2fbffff0000000070280000
+    m_SelectedIDs: f26fffff
+    m_LastClickedID: -36878
+    m_ExpandedIDs: f26fffff78f5ffff2af6ffff04f7ffffe2fbffff000000000428000028280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Boundary
-      m_OriginalName: Boundary
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10402
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 2}
     m_SearchString: 
