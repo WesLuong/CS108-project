@@ -19,7 +19,7 @@ public class DestroyByContact : MonoBehaviour {
             Instantiate(explosion, transform.position, transform.rotation);
         }
 
-        //Instantiate(explosion, transform.position, transform.rotation);
+        
         if (other.tag == "Player")
         {
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);

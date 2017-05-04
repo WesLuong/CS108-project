@@ -21,34 +21,33 @@ public class PlayerController : MonoBehaviour {
 
     private float nextFire;
 
+    private Camera mainCamera;
 
-    public KeyCode upArrow;
-    public KeyCode downArrow;
-    public KeyCode leftArrow;
-    public KeyCode rightArrow;
-
-
+    private void Start()
+    {
+        mainCamera = FindObjectOfType<Camera>();
+    }
 
     void Update()
     {
+        
+        Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Plane groundplane = new Plane(Vector3.up, Vector3.zero);
+        float rayLength;
+
+        if (groundplane.Raycast(cameraRay, out rayLength))
+        {
+            Vector3 pointToLook = cameraRay.GetPoint(rayLength);
+            transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
+        }
+
+
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
             GetComponent<AudioSource>().Play();
         }
-
-        if (Input.GetKeyDown(upArrow))
-            GetComponent<Transform>().eulerAngles = new Vector3(5f, 0, 0);
-
-        if (Input.GetKeyDown(downArrow))
-            GetComponent<Transform>().eulerAngles = new Vector3(-5f, 0, 0);
-
-        if (Input.GetKeyDown(leftArrow))
-            GetComponent<Transform>().eulerAngles = new Vector3(0, 5f, 0);
-
-        if (Input.GetKeyDown(rightArrow))
-            GetComponent<Transform>().eulerAngles = new Vector3(0, -5f, 0);
 
     }
 
