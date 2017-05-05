@@ -12,9 +12,28 @@ public class GameController : MonoBehaviour {
     public float startWait;
     public float waveWait;
 
+    private bool restart;
+    private bool gameOver;
+
     void Start()
     {
         StartCoroutine(SpawnWaves());
+    }
+
+    void Update()
+    {
+        if (restart)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Application.LoadLevel(Application.loadedLevel);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     IEnumerator SpawnWaves()
@@ -32,7 +51,19 @@ public class GameController : MonoBehaviour {
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
+
+            if (gameOver)
+            {
+                restart = true;
+                break;
+            }
+
         }
             
+    }
+
+    public void GameOver()
+    {
+        gameOver = true;
     }
 }
