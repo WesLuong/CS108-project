@@ -11,7 +11,7 @@ public class EnemyMover : MonoBehaviour {
         player = GameObject.FindGameObjectWithTag("Player");
 
     }
-
+    
     void Update()
     {    
         if (player == null)
@@ -23,5 +23,12 @@ public class EnemyMover : MonoBehaviour {
             //transform.LookAt(new Vector3(lookAt.x, transform.position.y, lookAt.z));
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, .03f);
         }
+
+        //testing rotations
+
+        transform.Rotate(new Vector3(0, 300, 0) * Time.deltaTime);
+        //transform.Rotate(Vector3.up, 20f * Time.deltaTime);
     }
+
+   
 }

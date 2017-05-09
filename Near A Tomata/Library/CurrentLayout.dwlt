@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 292}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 105
+  controlID: 91
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,8 +91,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 379, y: 292}
-  m_MaxSize: {x: 8004, y: 8042}
+  m_MinSize: {x: 509, y: 392}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 9
 --- !u!114 &5
@@ -140,8 +140,8 @@ MonoBehaviour:
     y: 0
     width: 1512
     height: 651
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -166,14 +166,14 @@ MonoBehaviour:
     y: 651
     width: 1512
     height: 296
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -258,8 +258,8 @@ MonoBehaviour:
     y: 0
     width: 1512
     height: 947
-  m_MinSize: {x: 102, y: 242}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 232, y: 392}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 10
 --- !u!114 &12
@@ -500,7 +500,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 743
-    width: 1504
+    width: 1510
     height: 275
   m_SearchFilter:
     m_NameFilter: 
@@ -513,19 +513,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Wes\Documents\GitHub\CS108-project\Near A Tomata
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 33}
-    m_SelectedIDs: c4240000
-    m_LastClickedID: 9412
-    m_ExpandedIDs: 00000000c82400005e250000602500004e270000
+    scrollPos: {x: 0, y: 34}
+    m_SelectedIDs: 60250000
+    m_LastClickedID: 9568
+    m_ExpandedIDs: 00000000c82400005e250000602500004e27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -578,9 +578,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 14260000
-    m_LastClickedInstanceID: 9748
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000882a00007e2a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -671,21 +671,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: eee5ffff8ce6ffff6ee7ffff6eebffffd8ebffffbeecffffe2fbffff00000000
+    m_ExpandedIDs: d4fbffffdefbffffe0fbffffe2fbffff00000000fa250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Restart Text
+      m_OriginalName: Restart Text
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 9750
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 2}
     m_SearchString: 

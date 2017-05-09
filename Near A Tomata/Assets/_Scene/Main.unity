@@ -234,62 +234,47 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_LocalPosition.z
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4269051809203116, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 4414200419561032, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1643195923804606, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 1844765269967168, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_Name
       value: CubeEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991403399037408, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    - target: {fileID: 1844765269967168, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114656277847082416, guid: 53035149ef8d37640bbae205702b7af7,
-        type: 2}
-      propertyPath: delay
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114670272809782616, guid: 53035149ef8d37640bbae205702b7af7,
-        type: 2}
-      propertyPath: tumble
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114670272809782616, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &175970852
@@ -504,7 +489,7 @@ MonoBehaviour:
     zMax: 18.5
   shot: {fileID: 1898894740770602, guid: c947b48ea07991947bb1274e659c1bda, type: 2}
   shotSpawn: {fileID: 23190826}
-  fireRate: 0.2
+  fireRate: 0.1
 --- !u!82 &352168537
 AudioSource:
   m_ObjectHideFlags: 0
@@ -782,10 +767,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1643195923804606, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
+  - {fileID: 1844765269967168, guid: 53035149ef8d37640bbae205702b7af7, type: 2}
   - {fileID: 1409008391952800, guid: 28b1da453eeb5fc4ab6cb3363a89c67b, type: 2}
   spawnValues: {x: 18, y: 0, z: 18}
-  enemyCount: 8
+  enemyCount: 6
   spawnWait: 0.5
   startWait: 1
   waveWait: 4
