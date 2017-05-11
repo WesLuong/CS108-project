@@ -15,13 +15,20 @@ public class GameController : MonoBehaviour {
     private bool restart;
     private bool gameOver;
 
+    public TextMesh scoreText;
+    private int score;
+
+
     void Start()
     {
+        score = 0;
+        UpdateScore();
         StartCoroutine(SpawnWaves());
     }
 
     void Update()
     {
+        UpdateScore();
         if (restart)
         {
             if (Input.GetKeyDown(KeyCode.R))
@@ -60,6 +67,16 @@ public class GameController : MonoBehaviour {
 
         }
             
+    }
+
+    public void AddScore(int newScoreValue)
+    {
+        score += newScoreValue;
+    }
+
+    void UpdateScore()
+    {
+        scoreText.text = "Score: " + score;
     }
 
     public void GameOver()

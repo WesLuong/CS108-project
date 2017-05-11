@@ -9,6 +9,8 @@ public class DestroyByContact : MonoBehaviour {
 
     private GameController gameController;
 
+    public int scoreValue;
+
     private void Start()
     {
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
@@ -42,6 +44,7 @@ public class DestroyByContact : MonoBehaviour {
             gameController.GameOver();
         }
 
+        gameController.AddScore(scoreValue);
         Destroy(other.gameObject);
         Destroy(gameObject);
     }
