@@ -13,13 +13,16 @@ public class WeaponController : MonoBehaviour {
 
     private AudioSource audioSource;
 
-    /**
+    GameController gameController;
+
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        InvokeRepeating("Fire", delay, fireRate);
+        //InvokeRepeating("Fire", delay, fireRate);
     }
 
+    /**
     void Fire()
     {
         Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
@@ -33,9 +36,8 @@ public class WeaponController : MonoBehaviour {
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-            
+            //audioSource.Play();
         }
-
     }
 
 
