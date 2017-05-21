@@ -6,14 +6,15 @@ public class EnemyMover : MonoBehaviour {
 
     private GameObject player;
 
+    public float speed;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-
     }
     
     void Update()
-    {    
+    {
+        
         if (player == null)
         {
             return;
@@ -21,7 +22,7 @@ public class EnemyMover : MonoBehaviour {
         else
         {
             //transform.LookAt(new Vector3(lookAt.x, transform.position.y, lookAt.z));
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, .03f);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);
         }
 
         //testing rotations

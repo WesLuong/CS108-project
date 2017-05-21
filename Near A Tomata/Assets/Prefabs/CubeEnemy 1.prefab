@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 114855594241021738}
   - component: {fileID: 114596020921064092}
   - component: {fileID: 82066677796232356}
+  - component: {fileID: 114263287281122466}
   m_Layer: 0
   m_Name: CubeEnemy 1
   m_TagString: Enemy
@@ -436,6 +437,18 @@ MonoBehaviour:
   explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 2}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
   scoreValue: 0
+--- !u!114 &114263287281122466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1844765269967168}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1ab7a4dd1659b43b9e8ce4c3e2c1cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
 --- !u!114 &114596020921064092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -447,6 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5ab55e1acf2e44690c72872d7647cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.03
 --- !u!114 &114842590990953728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -460,7 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 2}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
-  scoreValue: 10
+  scoreValue: 50
 --- !u!114 &114855594241021738
 MonoBehaviour:
   m_ObjectHideFlags: 1

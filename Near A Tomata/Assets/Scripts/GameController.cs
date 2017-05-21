@@ -1,29 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
     public GameObject[] enemies;
-    public Vector3 spawnValues;
+    public GameObject[] obstacles;
+    public Vector3 spawnValuesForEnemies;
+    public Vector3 spawnValuesForObstacles;
 
     public int enemyCount;
     public float spawnWait;
     public float startWait;
     public float waveWait;
 
+    public int obstacleCount;
+    public float spawnWait2;
+    public float startWait2;
+    public float waveWait2;
+
     private bool restart;
     private bool gameOver;
 
     public TextMesh scoreText;
+    public TextMesh gameOverText;
     private int score;
 
-
+    private float[] zValues = {-21, 21};
     void Start()
     {
+        gameOver = false;
+        restart = false;
+        gameOverText.text = "";
         score = 0;
         UpdateScore();
         StartCoroutine(SpawnWaves());
+        StartCoroutine(SpawnObstacles());
     }
 
     void Update()
@@ -33,7 +46,9 @@ public class GameController : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
-                Application.LoadLevel(Application.loadedLevel);
+                //Application.LoadLevel(Application.loadedLevel);
+                SceneManager.LoadScene("Main");
+                
             }
         }
 
@@ -52,7 +67,8 @@ public class GameController : MonoBehaviour {
             {
 
                 GameObject enemy = enemies[Random.Range(0, enemies.Length)];
-                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+
+                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValuesForEnemies.x, spawnValuesForEnemies.x), spawnValuesForEnemies.y, zValues[Random.Range(0, zValues.Length)]);
                 Quaternion spawnRotation = Quaternion.identity;
                 Instantiate(enemy, spawnPosition, spawnRotation);
                 yield return new WaitForSeconds(spawnWait);
@@ -69,6 +85,33 @@ public class GameController : MonoBehaviour {
             
     }
 
+    IEnumerator SpawnObstacles()
+    {
+        yield return new WaitForSeconds(startWait2);
+        while (true)
+        {
+            for (int i = 0; i < obstacleCount; i++)
+            {
+
+                GameObject obstacle = obstacles[Random.Range(0, obstacles.Length)];
+
+                Vector3 spawnPosition = new Vector3(Random.Range(-spawnValuesForObstacles.x, spawnValuesForObstacles.x), spawnValuesForObstacles.y, spawnValuesForObstacles.z);
+                Quaternion spawnRotation = Quaternion.identity;
+                Instantiate(obstacle, spawnPosition, spawnRotation);
+                yield return new WaitForSeconds(spawnWait2);
+            }
+            yield return new WaitForSeconds(waveWait2);
+
+            if (gameOver)
+            {
+                restart = true;
+                break;
+            }
+
+        }
+
+    }
+
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
@@ -81,6 +124,7 @@ public class GameController : MonoBehaviour {
 
     public void GameOver()
     {
+        gameOverText.text = "Game Over!";
         gameOver = true;
     }
 }

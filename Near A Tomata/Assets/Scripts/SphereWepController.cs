@@ -4,33 +4,23 @@ using UnityEngine;
 
 public class SphereWepController : MonoBehaviour {
 
-
     public GameObject shot;
     public Transform shotSpawn;
 
     public float fireRate;
     public float delay;
     private float nextFire;
+    GameObject Player;
 
-    private AudioSource audioSource;
-
-    /**
-    void Start()
+    private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        InvokeRepeating("Fire", delay, fireRate);
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
-
-    void Fire()
-    {
-        Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-        audioSource.Play();
-    }
-    **/
 
     private void Update()
     {
-        if (Time.time > nextFire)
+        
+        if (Time.time > nextFire && Player != null)
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, Quaternion.Euler(new Vector3(0, 0, 0)));

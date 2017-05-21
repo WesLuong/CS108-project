@@ -106,14 +106,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655856991768178}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -1.6}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4558235984750812}
   m_Father: {fileID: 4033757322759032}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4558235984750812
 Transform:
   m_ObjectHideFlags: 1
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 2}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
-  scoreValue: 10
+  scoreValue: 30
 --- !u!114 &114117624903977046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shot: {fileID: 100000, guid: 11e27c26ac87b40f0a62ec40d7261989, type: 2}
   shotSpawn: {fileID: 4149250806090542}
-  fireRate: 0.5
+  fireRate: 0.7
   delay: 0
 --- !u!114 &114149988764204142
 MonoBehaviour:
@@ -364,12 +364,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1145629828109688}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48203dce5b5e54a4b9b0cd65cb955408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dodge: 5
+  dodge: 7
   smoothing: 7.5
   tilt: 0
   startWait: {x: 0.5, y: 1}
@@ -417,6 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f5ab55e1acf2e44690c72872d7647cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.03
 --- !u!135 &135124164767388348
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartEndless : MonoBehaviour {
  
@@ -8,7 +9,8 @@ public class StartEndless : MonoBehaviour {
     {   
         if(this.name == "Endless")
         {
-            Application.LoadLevel("Main");
+            //Application.LoadLevel("Main");
+            SceneManager.LoadScene("Main");
         }
         else if(this.name == "Quit")
         {

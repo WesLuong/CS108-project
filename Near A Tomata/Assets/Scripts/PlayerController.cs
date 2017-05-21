@@ -12,7 +12,6 @@ public class Boundary
 public class PlayerController : MonoBehaviour {
 
     public float speed;
-    public float tilt;
     public Boundary boundary;
 
     public GameObject shot;
@@ -22,6 +21,7 @@ public class PlayerController : MonoBehaviour {
     private float nextFire;
 
     private Camera mainCamera;
+    private Vector3 mouseWorldPosition;
 
     private void Start()
     {
@@ -37,10 +37,17 @@ public class PlayerController : MonoBehaviour {
 
         if (groundplane.Raycast(cameraRay, out rayLength))
         {
-            Vector3 pointToLook = cameraRay.GetPoint(rayLength);
-            transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
+           Vector3 pointToLook = cameraRay.GetPoint(rayLength);
+           transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
+        
+        
+        //float h = Input.mousePosition.x - Screen.width / 2;
+       // float v = Input.mousePosition.y - Screen.height / 2;
+        //float angle = -Mathf.Atan2(v, h) * Mathf.Rad2Deg;
 
+        //transform.rotation = Quaternion.Euler(-90, 0, 245);
+        
 
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
@@ -67,6 +74,6 @@ public class PlayerController : MonoBehaviour {
             Mathf.Clamp(GetComponent<Rigidbody>().position.z, boundary.zMin, boundary.zMax)
         );
 
-        GetComponent<Rigidbody>().rotation = Quaternion.Euler(0.0f, 0.0f, GetComponent<Rigidbody>().velocity.x * -tilt);
+        
     }
 }

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 65401525545882164}
   - component: {fileID: 114230856200197278}
   - component: {fileID: 114855893688466446}
-  - component: {fileID: 114643382300252628}
+  - component: {fileID: 114562008839023078}
   m_Layer: 0
   m_Name: CubeEnemy
   m_TagString: Enemy
@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7601d507d7678c84d93fa19825d9cb32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tumble: 0
---- !u!114 &114643382300252628
+  tumble: 5
+--- !u!114 &114562008839023078
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6a24a0dabcd8d4eb216b044cdcf90b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -5
+  speed: -10
 --- !u!114 &114855893688466446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,3 +162,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100012, guid: 384371afbb4354cc9a3fc68eab303756, type: 2}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
+  scoreValue: 5
